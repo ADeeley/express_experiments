@@ -1,0 +1,15 @@
+doctype html
+
+html(lang="en")
+    head
+        title= OldForm
+    body
+        h1 STRING REVERSER!
+        form(action='/form' method='post')
+            p String to reverse: 
+            input(
+                name='str' 
+                type='text'
+            )
+        p(style='display: inline-block') Result:
+        p#result(style="display: inline-block") string
