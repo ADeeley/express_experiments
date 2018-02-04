@@ -1,0 +1,38 @@
+{
+  "name": "expressworks",
+  "version": "1.0.0",
+  "description": "A repo for my Express Server experiments.",
+  "main": "goodOldForm.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ADeeley/express_experiments.git"
+  },
+  "keywords": [
+    "express",
+    "node",
+    "javascript"
+  ],
+  "author": "Adam M Deeley",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ADeeley/express_experiments/issues"
+  },
+  "homepage": "https://github.com/ADeeley/express_experiments#readme",
+  "devDependencies": {
+    "eslint": "^4.17.0",
+    "eslint-config-standard": "^11.0.0-beta.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "node": "^9.5.0",
+    "stylus": "^0.54.5"
+  }
+}

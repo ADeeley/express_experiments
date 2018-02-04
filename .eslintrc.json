@@ -1,0 +1,35 @@
+{
+    "plugins": ["node"],
+    "env": {
+        "browser": true,
+        "es6": true
+    },
+    "extends": ["eslint:recommended", "plugin:node/recommended"],
+    "parserOptions": {
+        "sourceType": "module"
+    },
+    "rules": {
+        "indent": [
+            "error",
+            4
+        ],
+        "no-console": 0,
+        "linebreak-style": [
+            "error",
+            "windows"
+        ],
+        "quotes": [
+            "error",
+            "single"
+        ],
+        "semi": [
+            "error",
+            "always"
+        ],
+        "node": {
+            "node/no-extraneous-require": ["error", {
+                "allowModules": ["express", "stylus"]
+            }]
+        }
+    }
+}
