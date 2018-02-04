@@ -1,5 +1,6 @@
 'use strict';
 const bodyparser = require('body-parser');
+const pug = require('pug');
 const path = require('path');
 const port = process.argv[2];
 const express = require('express');
@@ -20,7 +21,7 @@ app.get('/home', (req, res) => {
     res.render('oldform')
 })
 app.post('/form', (req, res) => {
-    res.end(reverseStr(req.body.str));
+    res.render('oldform', { result: reverseStr(req.body.str) })
 })
 
 app.listen(port, () => {
